@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+  <!-- Android 11+ package visibility: launcher apps for the allowlist picker, and
+       home apps so Home can pass through to the parent's launcher. -->
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.MAIN" />
+      <category android:name="android.intent.category.LAUNCHER" />
+    </intent>
+    <intent>
+      <action android:name="android.intent.action.MAIN" />
+      <category android:name="android.intent.category.HOME" />
+    </intent>
+  </queries>
+
+  <!-- Usage access for daily limits (granted by the user in system settings). -->
+  <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+
+  <application>
+    <!-- App guard (PLAN §5.4). -->
+    <service
+      android:name="com.kidmode.core.AppGuardService"
+      android:exported="true"
+      android:label="@string/kidmode_guard_label"
+      android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+      <intent-filter>
+        <action android:name="android.accessibilityservice.AccessibilityService" />
+      </intent-filter>
+      <meta-data
+        android:name="android.accessibilityservice"
+        android:resource="@xml/kidmode_app_guard" />
+    </service>
+
+    <!-- Home entry (PLAN §5.3): kid launcher in Kid Mode, the parent's launcher otherwise. -->
+    <activity
+      android:name="com.kidmode.core.HomeActivity"
+      android:exported="true"
+      android:excludeFromRecents="true"
+      android:launchMode="singleTask"
+      android:noHistory="true"
+      android:taskAffinity=""
+      android:theme="@android:style/Theme.Translucent.NoTitleBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.HOME" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+
+    <!-- Phase 2+: FilterVpnService, BootReceiver and the FOREGROUND_SERVICE /
+         RECEIVE_BOOT_COMPLETED permissions are declared here. -->
+  </application>
+</manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="kidmode_guard_label">Littlegate app blocking</string>
+  <string name="kidmode_guard_description">While Kid Mode is on, Littlegate checks which app is open and sends your child back to their apps if it isn\'t one you allowed. It doesn\'t read what\'s on the screen, and nothing leaves the phone.</string>
+</resources>
