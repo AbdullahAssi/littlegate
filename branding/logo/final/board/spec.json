@@ -1,0 +1,58 @@
+{
+  "brand": "Littlegate",
+  "tagline": "A safer internet, behind a little gate",
+  "brief": "An Android parental-control app with no accounts and no cloud. It filters a child's internet on the phone and keeps every exit behind a parent PIN. Parents install it and pay for it; children live inside it. It should feel calm and trustworthy to parents, and friendly to kids, without looking like surveillance.",
+  "adjectives": [
+    "calm",
+    "trustworthy",
+    "warm",
+    "friendly",
+    "firm"
+  ],
+  "criteria": "Success: no shields, padlocks, eyes or family figures; reads at 16 px and as an Android adaptive icon; works in one colour; friendly enough for kids, credible to parents.",
+  "industry": "consumer-app",
+  "mockups": [
+    "app-icon",
+    "website",
+    "social",
+    "favicon-tab",
+    "sticker",
+    "tshirt"
+  ],
+  "nav": [
+    "How it works",
+    "Privacy",
+    "Download"
+  ],
+  "brand_color": "#4E3FD6",
+  "greyscale": false,
+  "final": true,
+  "round": 2,
+  "designer": "Littlegate",
+  "concepts": [
+    {
+      "name": "Garden arch",
+      "symbol": "../littlegate-symbol.svg",
+      "lockup": "../littlegate-horizontal.svg",
+      "stacked": "../littlegate-stacked.svg",
+      "symbol_on_tile": "../variants/littlegate-symbol-white.svg",
+      "symbol_on_dark": "../littlegate-symbol-reversed.svg",
+      "lockup_on_dark": "../littlegate-horizontal-dark.svg",
+      "stacked_on_dark": "../littlegate-stacked-dark.svg",
+      "idea": "An open arch with the child inside: the safe side of a little gate.",
+      "rationale": [
+        "Protection without the clich\u00c3\u00a9 shield or padlock",
+        "Arch stroke equals the Fredoka stem, so mark and name share one weight",
+        "Round leg ends echo Fredoka's rounded terminals",
+        "Holds up at 16 px and as an Android adaptive icon; small-size cut for <= 32 px"
+      ]
+    }
+  ],
+  "recommendation": "Garden arch in Iris #4E3FD6 with a Fredoka SemiBold wordmark in Ink #221F2B.",
+  "next_steps": [
+    "Clear the name and mark: USPTO (classes 9 & 42) + EUIPO / local office",
+    "Wire app-icons/ into mobile/app.json (adaptive icon, splash, notification icon)",
+    "Decide the Android package id before the first Play Store upload",
+    "Print: proof CMYK and choose a Pantone from a physical swatch book"
+  ]
+}
