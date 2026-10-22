@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><title>B k-dot</title>
+<g fill="none" stroke="#111" stroke-width="48" stroke-linecap="round" stroke-linejoin="round">
+<path d="M64 40 V216"/><path d="M160 80 L88 152 L152 216"/></g>
+<circle cx="188" cy="152" r="24" fill="#111"/>
+</svg>

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><title>c-arch adaptive</title><circle cx="128" cy="128" r="128" fill="#4E3FD6"/><g transform="translate(53.76 53.76) scale(0.58)">
+<path fill="#FFFFFF" d="M40 224 V128 A88 88 0 0 1 216 128 V224 H184 V128 A56 56 0 0 0 72 128 V224 Z"/>
+<circle cx="128" cy="184" r="32" fill="#FFFFFF"/>
+</g></svg>
